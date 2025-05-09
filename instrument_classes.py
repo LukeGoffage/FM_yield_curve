@@ -25,7 +25,7 @@ class CashFlows:
     def get_cash_flows(self):
         return list(zip(self.maturities, self.amounts))
         
-# create a class for a bond that inherits from CashFlows
+# create a class for a bank bill that inherits from CashFlows
 class Bank_bill(CashFlows):
 
     def __init__(self, face_value=100, maturity=.25, ytm=0.00, price=100):
